@@ -1,15 +1,19 @@
 [versions]
-agp = "8.3.1"
+agp = "8.3.2"
 kotlin = "1.9.0"
-coreKtx = "1.12.0"
-appcompat = "1.6.1"
-composeBom = "2023.08.00"
-tvFoundation = "1.0.0-alpha07"
-tvMaterial = "1.0.0-alpha07"
-lifecycleRuntimeKtx = "2.7.0"
-activityCompose = "1.7.0"
-gson = "2.8.8"
+coreKtx = "1.13.1"
+appcompat = "1.7.0"
+composeBom = "2024.09.01"
+kotlinxSerializationCore = "1.6.3"
+kotlinxSerializationJson = "1.6.3"
+kotlinxSerializationPlugin = "1.9.23"
+tvFoundation = "1.0.0-alpha11"
+tvMaterial = "1.0.0"
+lifecycleRuntimeKtx = "2.8.5"
+activityCompose = "1.9.2"
+gson = "2.10.1"
 coil = "2.6.0"
+composeNavigation = "2.8.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,8 +29,12 @@ androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecyc
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+kotlinx-serialization-core = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerializationCore" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinxSerializationPlugin" }
 
